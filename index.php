@@ -24,9 +24,18 @@ require_once("config.php");
 //$usuario->login("jorge", "gatoPreto");
 //echo $usuario;
 
-$aluno = new Usuario("bahh", "kkk");
+//Criando um novo usuário
 
-$aluno->insert();
+//$aluno = new Usuario("bahh", "kkk");
+//$aluno->insert();
+//echo $aluno;
+ 
+ $usuario = new Usuario();
 
-echo $aluno;
+ $usuario->loadById(8);
+
+ $usuario->update("corno", "lskdfjlsdfj");
+
+ echo $usuario;
+
  ?>
