@@ -30,12 +30,20 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
  
- $usuario = new Usuario();
 
- $usuario->loadById(8);
+ //Alterar um usuário
+ //$usuario = new Usuario();
+ //$usuario->loadById(8);
+ //$usuario->update("corno", "lskdfjlsdfj");
+ //echo $usuario;
 
- $usuario->update("corno", "lskdfjlsdfj");
+//Deletando um usuário
 
- echo $usuario;
+$usuario = new Usuario();
 
+$usuario->loadById(6);
+
+$usuario->delete();
+
+echo $usuario;
  ?>
